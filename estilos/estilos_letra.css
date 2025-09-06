@@ -1,0 +1,12 @@
+body {
+    /* Intenta usar Century Gothic primero; si no, usa Poppins; y finalmente cualquier sans-serif */
+    font-family: "Century Gothic", CenturyGothic, AppleGothic, 'Poppins', sans-serif;
+}
+
+li{
+    margin: 10px 0;
+}
+
+h1{
+    margin-top: 20px;
+}

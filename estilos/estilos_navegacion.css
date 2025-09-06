@@ -1,0 +1,87 @@
+/*Barra de navegacion*/
+
+.navbar{
+    padding: 2rem;
+    background-color: #f5f6f7;
+
+}
+
+.navbar-collapse{
+    align-items: center;
+    justify-content: space-between;
+}
+
+/*Logo*/
+.navbar-brand{
+    /*background-color: lightblue;*/
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.navbar-brand p{
+    margin-top: 10px;
+}
+
+/*Menu desplegable*/
+.dropdown-menu{
+    background-color: #002F6C;
+}
+
+.dropdown-menu > li > a{
+    color: white;
+}
+
+/* Estilos para submenu */
+.accordion-button {
+  background-color: #002F6C;
+  color: white;
+}
+
+/* sub-menu Estado cerrado */
+.accordion-button::after {
+  filter: brightness(0) invert(1); /* convierte la flecha en blanco */
+}
+
+/* sub-menu Estado abierto (expandido) */
+.accordion-button:not(.collapsed)::after {
+  filter: none; /* deja el color original o cámbialo como quieras */
+}
+
+/*Adaptable responsivo*/
+@media screen and (max-width: 767px){
+    .navbar-brand{
+        display: none;
+    }
+
+    .dropdown{
+        text-align: center;
+    }
+}
+
+@media screen and(min-width: 700px) {
+    .hero-inferior-imegen{
+        max-width: 600px;
+    }
+}
+
+@media screen and(max-width: 400px){
+    .overlay p{
+        font-size: 18px;
+    }
+    .overlay i{
+        font-size: 40px;
+    }
+}
+
+@media screen and (max-widht: 800px){
+    .testimonio-imagen{
+        height: 120px;
+        width: 120px;
+    }
+
+    .testimonio-texto{
+        font-size: 18px;
+    }
+    
+}
