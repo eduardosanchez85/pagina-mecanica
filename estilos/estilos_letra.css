@@ -1,6 +1,7 @@
 body {
     /* Intenta usar Century Gothic primero; si no, usa Poppins; y finalmente cualquier sans-serif */
-    font-family: "Century Gothic", CenturyGothic, AppleGothic, 'Poppins', sans-serif;
+    font-family: "Century Gothic", CenturyGothic, AppleGothic, sans-serif;
+    text-align: justify;
 }
 
 li{

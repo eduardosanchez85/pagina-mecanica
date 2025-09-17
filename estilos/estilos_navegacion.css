@@ -1,11 +1,13 @@
 /*Barra de navegacion*/
-
 .navbar{
-    padding: 2rem;
     background-color: #f5f6f7;
-
+    padding: 5px;
 }
 
+.container-fluid {
+  padding-left: 0;
+  padding-right: 0;
+}
 .navbar-collapse{
     align-items: center;
     justify-content: space-between;
@@ -57,31 +59,16 @@
     .dropdown{
         text-align: center;
     }
-}
 
-@media screen and(min-width: 700px) {
-    .hero-inferior-imegen{
-        max-width: 600px;
-    }
-}
-
-@media screen and(max-width: 400px){
-    .overlay p{
-        font-size: 18px;
-    }
-    .overlay i{
-        font-size: 40px;
-    }
-}
-
-@media screen and (max-widht: 800px){
-    .testimonio-imagen{
-        height: 120px;
-        width: 120px;
-    }
-
-    .testimonio-texto{
-        font-size: 18px;
-    }
     
 }
+
+@media screen and (max-width: 900px) {
+  .navbar .nav-link {
+    font-size: 14px;
+  }
+}
+
+
+
+    

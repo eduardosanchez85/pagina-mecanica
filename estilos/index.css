@@ -1,0 +1,102 @@
+.laboratorios{
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: center;
+    gap: 10px;
+}
+
+h3{
+    text-align: center;
+}
+
+p{
+    margin-left: 50px;
+}
+
+/*Diseño de cartas egresados*/
+.carta {
+    padding: 10px;
+    background-color: white;
+    border-radius: 3%;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.3);
+}
+
+.carta-encabezado {
+    padding: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+
+.logo-carta {
+    background-color: dodgerblue;
+    width: 50px;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    font-weight: bold;
+    font-size: 20px;
+}
+
+.texto-carta {
+    margin: 10px;
+    font-size: 15px;
+}
+
+
+@media screen and (max-width: 576px) {
+    .laboratorios {
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    .egresados {
+        display: flex;
+        flex-direction: column;/* apila los elementos en columna */
+        gap: 5px;
+        align-items: center;
+    }
+
+    .descripcion-egresados{
+        font-size: 15px;
+        margin: 10px;
+    }
+}
+
+@media screen and (min-width: 586px){
+    .egresados {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            column-gap: 5px;
+            row-gap: 5px;
+            justify-items: center;
+        }
+    .descripcion-egresados{
+        font-size: 15px;
+        margin: 10px;
+    }
+}
+
+@media screen and (min-width: 649px) {
+    .card-header > h5{
+        font-size: 16px;
+    }
+
+    .laboratorios {
+        margin: 0px 15px;
+    }
+}
+
+@media screen and (min-width: 992px){
+    /*Atributos de egreso*/
+        .egresados {
+            padding: 0px 10px;
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr;
+            column-gap: 10px;
+            justify-items: center;
+        }
+}
